@@ -1,0 +1,603 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #dfeec6;
+    font-family: 'Patrick Hand',cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.browser {
+    width: 1000px;
+    background: #fffaf0;
+    border: 5px solid #6f6b37;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+
+/* ===========================
+TOP BAR
+=========================== */
+
+.topbar {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 18px;
+
+    background: #8db05a;
+
+    background-image:
+    radial-gradient(#cfe8a7 18%,transparent 18%);
+
+    background-size: 18px 18px;
+
+}
+
+.logo {
+
+    font-size: 28px;
+
+}
+
+.url {
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: white;
+
+    flex: 1;
+
+    margin-left: 12px;
+
+}
+
+.window {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+.btn {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 12px;
+
+    background: #f8f4d9;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+}
+
+/* ===========================
+SEARCH BAR
+=========================== */
+
+.searchbar {
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 12px;
+
+    background: #efd6b8;
+
+    gap: 12px;
+
+}
+
+.controls {
+
+    display: flex;
+
+    gap: 12px;
+
+    font-size: 30px;
+
+    color: #775234;
+
+}
+
+.searchbar input {
+
+    flex: 1;
+
+    height: 55px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    padding: 0 20px;
+
+    font-size: 26px;
+
+    font-family: inherit;
+
+    background: white;
+
+    outline: none;
+
+}
+
+.search {
+
+    font-size: 28px;
+
+}
+
+/* ===========================
+TABS
+=========================== */
+
+.tabs {
+
+    display: flex;
+
+    gap: 12px;
+
+    padding: 14px;
+
+    background: #fff5df;
+
+}
+
+.tab {
+
+    background: white;
+
+    padding: 12px 24px;
+
+    border-radius: 18px 18px 0 0;
+
+    font-size: 24px;
+
+    display: flex;
+
+    gap: 20px;
+
+    align-items: center;
+
+    border: 2px solid #e5d4b0;
+
+}
+
+.active {
+
+    background: #fffaf0;
+
+    font-weight: bold;
+
+}
+
+/* ===========================
+MAIN
+=========================== */
+
+.main {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 20px;
+
+    padding: 20px;
+
+}
+
+.profile {
+
+    border: 3px solid #aac96b;
+
+    border-radius: 18px;
+
+    padding: 15px;
+
+    background: #fffef6;
+
+}
+
+.name {
+
+    background: #7ab447;
+
+    color: white;
+
+    padding: 8px;
+
+    font-size: 24px;
+
+    border-radius: 8px;
+
+    margin-bottom: 10px;
+
+}
+
+.info {
+
+    background: #b03b42;
+
+    color: white;
+
+    padding: 6px;
+
+    margin-bottom: 15px;
+
+    border-radius: 6px;
+
+}
+
+.profile p {
+
+    font-size: 22px;
+
+    line-height: 1.5;
+
+    color: #5b4b38;
+
+}
+
+.center img {
+
+    width: 100%;
+
+    border-radius: 20px;
+
+    border: 4px solid #7a9340;
+
+}
+
+.right {
+
+    padding: 10px;
+
+}
+
+.right h2 {
+
+    background: #9acb52;
+
+    color: white;
+
+    padding: 10px;
+
+    text-align: center;
+
+    border-radius: 14px;
+
+    margin-bottom: 15px;
+
+    font-size: 30px;
+
+}
+
+.right ul {
+
+    list-style: none;
+
+}
+
+.right li {
+
+    padding: 12px 0;
+
+    font-size: 28px;
+
+    border-bottom: 2px dashed #ddd;
+
+}
+
+/* ===========================
+   MUSIC PLAYER
+=========================== */
+
+.player {
+    margin: 0 20px 20px;
+    background: #8cb35d;
+    border-radius: 15px;
+    color: #fff;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+}
+
+.player span {
+    white-space: nowrap;
+}
+
+.progress {
+    flex: 1;
+    height: 8px;
+    background: #dfecc7;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.line {
+    width: 35%;
+    height: 100%;
+    background: white;
+    border-radius: 20px;
+    animation: music 6s infinite alternate;
+}
+
+@keyframes music {
+    from {
+        width: 15%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+/* ===========================
+BOTTOM
+=========================== */
+
+.bottom {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 20px;
+    padding: 0 20px 20px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 20px;
+    border: 4px solid #7c9643;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.post {
+    border-bottom: 2px dashed #d4d4d4;
+    padding-bottom: 15px;
+}
+
+.post h3 {
+    display: inline-block;
+    background: #8cb44f;
+    color: #fff;
+    padding: 5px 16px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    font-family: 'Fredoka',sans-serif;
+}
+
+.post p {
+    font-size: 22px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* ===========================
+HOVER
+=========================== */
+
+.tab,
+.btn,
+.right li,
+.post,
+.profile,
+.center img,
+.image img {
+    transition: .3s;
+}
+
+.tab:hover {
+    transform: translateY(-3px);
+    background: #fff;
+}
+
+.btn:hover {
+    background: #ffeeb9;
+}
+
+.right li:hover {
+    padding-left: 15px;
+    color: #7aa53d;
+}
+
+.center img:hover,
+.image img:hover {
+    transform: scale(1.03);
+}
+
+.profile:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,.15);
+}
+
+/* ===========================
+SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8cb35d;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f6f6f6;
+}
+
+/* ===========================
+BACKGROUND PATTERN
+=========================== */
+
+.browser {
+    background-image:
+    repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 28px,
+    rgba(238,227,194,.35) 29px
+    );
+}
+
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:950px) {
+
+    .browser {
+        width: 100%;
+    }
+
+    .main {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .bottom {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .searchbar {
+
+        flex-wrap: wrap;
+
+    }
+
+    .player {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .url {
+
+        font-size: 22px;
+
+    }
+
+    .tab {
+
+        font-size: 18px;
+
+    }
+
+    .profile p {
+
+        font-size: 18px;
+
+    }
+
+    .right h2 {
+
+        font-size: 24px;
+
+    }
+
+    .right li {
+
+        font-size: 22px;
+
+    }
+
+    .post p {
+
+        font-size: 18px;
+
+    }
+
+}
+
+/* ===========================
+SMALL PHONE
+=========================== */
+
+@media(max-width:600px) {
+
+    body {
+
+        padding: 15px;
+
+    }
+
+    .searchbar input {
+
+        font-size: 18px;
+
+        height: 45px;
+
+    }
+
+    .btn {
+
+        width: 34px;
+
+        height: 34px;
+
+    }
+
+    .controls {
+
+        font-size: 22px;
+
+    }
+
+    .player {
+
+        font-size: 18px;
+
+    }
+
+    .name {
+
+        font-size: 18px;
+
+    }
+
+    .info {
+
+        font-size: 15px;
+
+    }
+
+}
